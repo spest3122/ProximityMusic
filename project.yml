@@ -1,0 +1,28 @@
+name: ProximityMusic
+options:
+  bundleIdPrefix: com.example
+targets:
+  ProximityMusic:
+    type: application
+    platform: [iOS, macOS]
+    deploymentTarget:
+      iOS: 16.0
+      macOS: 13.0
+    sources: 
+      - Sources
+      - Resources
+    info:
+      path: Info.plist
+      properties:
+        UILaunchScreen: {}
+        NSBluetoothAlwaysUsageDescription: "This app needs Bluetooth to detect proximity between your devices."
+        NSBluetoothPeripheralUsageDescription: "This app needs Bluetooth to broadcast its presence to your other devices."
+        UIBackgroundModes:
+          - bluetooth-central
+          - bluetooth-peripheral
+          - audio
+    entitlements:
+      path: ProximityMusic.entitlements
+      properties:
+        com.apple.security.device.bluetooth: true
+        com.apple.security.app-sandbox: true

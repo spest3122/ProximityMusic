@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		212FAB74847CC399517DEA5B /* ProximityMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC345F7CBCC8A996CB27E01 /* ProximityMusicApp.swift */; };
+		3B5A7321459943D9D38F9604 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47E26B603EAC42F66EBDD6 /* AudioManager.swift */; };
+		44354CDB13F7C78056681119 /* funkbreakbeat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3C60220D8C5FCEAF45855EDC /* funkbreakbeat.mp3 */; };
+		52A9433789F3593BB58BFF5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D90A3EBE91A53DDA4BD5A6 /* ContentView.swift */; };
+		5DB12FF73FF8B10627255C9F /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1FD29C703692C99DD32F95 /* BluetoothManager.swift */; };
+		5E4A49527E9AE683A9598072 /* gvidongvidon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA687DB7017BD2FBE7CC7A6E /* gvidongvidon.mp3 */; };
+		9056ABEF24336B123FDFDD6A /* rhythmwalkfunk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4BDDFA2FD880DF77A6D753A /* rhythmwalkfunk.mp3 */; };
+		94305ABFEA70314EE2679EAC /* gvidongvidon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA687DB7017BD2FBE7CC7A6E /* gvidongvidon.mp3 */; };
+		A46016CBC437CDDC26322183 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D90A3EBE91A53DDA4BD5A6 /* ContentView.swift */; };
+		A6F2A7CDE39B5916F3153490 /* rhythmwalkfunk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4BDDFA2FD880DF77A6D753A /* rhythmwalkfunk.mp3 */; };
+		AE3FE63D18AAA84EBB059CDE /* funkbreakbeat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3C60220D8C5FCEAF45855EDC /* funkbreakbeat.mp3 */; };
+		B8D520BB8B0D18CFA565FC48 /* ProximityMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC345F7CBCC8A996CB27E01 /* ProximityMusicApp.swift */; };
+		DBB63DEA4741905EBF887766 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1FD29C703692C99DD32F95 /* BluetoothManager.swift */; };
+		F44F72EE8B79EF18D9E88B85 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47E26B603EAC42F66EBDD6 /* AudioManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C60220D8C5FCEAF45855EDC /* funkbreakbeat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = funkbreakbeat.mp3; sourceTree = "<group>"; };
+		51D529106894C6823E307E39 /* ProximityMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProximityMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64D90A3EBE91A53DDA4BD5A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8AC345F7CBCC8A996CB27E01 /* ProximityMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximityMusicApp.swift; sourceTree = "<group>"; };
+		8D1FD29C703692C99DD32F95 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		B4BDDFA2FD880DF77A6D753A /* rhythmwalkfunk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rhythmwalkfunk.mp3; sourceTree = "<group>"; };
+		B89221DC9D751CD6DB4D9D1D /* ProximityMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProximityMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA47E26B603EAC42F66EBDD6 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		FA687DB7017BD2FBE7CC7A6E /* gvidongvidon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gvidongvidon.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		6D508A87C52F9675F2418533 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3C60220D8C5FCEAF45855EDC /* funkbreakbeat.mp3 */,
+				FA687DB7017BD2FBE7CC7A6E /* gvidongvidon.mp3 */,
+				B4BDDFA2FD880DF77A6D753A /* rhythmwalkfunk.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		857A8E7E928B57D5FEB8DB2B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BA47E26B603EAC42F66EBDD6 /* AudioManager.swift */,
+				8D1FD29C703692C99DD32F95 /* BluetoothManager.swift */,
+				64D90A3EBE91A53DDA4BD5A6 /* ContentView.swift */,
+				8AC345F7CBCC8A996CB27E01 /* ProximityMusicApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		870D72A43198A91CD121CAB0 = {
+			isa = PBXGroup;
+			children = (
+				6D508A87C52F9675F2418533 /* Resources */,
+				857A8E7E928B57D5FEB8DB2B /* Sources */,
+				C8961BD902384D7ED9C62781 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8961BD902384D7ED9C62781 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51D529106894C6823E307E39 /* ProximityMusic.app */,
+				B89221DC9D751CD6DB4D9D1D /* ProximityMusic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		954B2D156F3328006D506EE1 /* ProximityMusic_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 927B93DE7AE27338246154EA /* Build configuration list for PBXNativeTarget "ProximityMusic_iOS" */;
+			buildPhases = (
+				00DBD17C1606820AC1B6ECC2 /* Sources */,
+				216257D539497DE868A6C5A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProximityMusic_iOS;
+			packageProductDependencies = (
+			);
+			productName = ProximityMusic_iOS;
+			productReference = 51D529106894C6823E307E39 /* ProximityMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C17C218833E091FECEB704D0 /* ProximityMusic_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 650BD34CC42A499EFCF9BDEA /* Build configuration list for PBXNativeTarget "ProximityMusic_macOS" */;
+			buildPhases = (
+				9F9A2767072DC202425E6102 /* Sources */,
+				E3636B72E6D7167A08066A03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProximityMusic_macOS;
+			packageProductDependencies = (
+			);
+			productName = ProximityMusic_macOS;
+			productReference = B89221DC9D751CD6DB4D9D1D /* ProximityMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A15BFF39C981589329A3EA47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 72C729DBC75AC7DB8CA777FC /* Build configuration list for PBXProject "ProximityMusic" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 870D72A43198A91CD121CAB0;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C8961BD902384D7ED9C62781 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				954B2D156F3328006D506EE1 /* ProximityMusic_iOS */,
+				C17C218833E091FECEB704D0 /* ProximityMusic_macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		216257D539497DE868A6C5A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE3FE63D18AAA84EBB059CDE /* funkbreakbeat.mp3 in Resources */,
+				94305ABFEA70314EE2679EAC /* gvidongvidon.mp3 in Resources */,
+				9056ABEF24336B123FDFDD6A /* rhythmwalkfunk.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3636B72E6D7167A08066A03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44354CDB13F7C78056681119 /* funkbreakbeat.mp3 in Resources */,
+				5E4A49527E9AE683A9598072 /* gvidongvidon.mp3 in Resources */,
+				A6F2A7CDE39B5916F3153490 /* rhythmwalkfunk.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00DBD17C1606820AC1B6ECC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B5A7321459943D9D38F9604 /* AudioManager.swift in Sources */,
+				5DB12FF73FF8B10627255C9F /* BluetoothManager.swift in Sources */,
+				52A9433789F3593BB58BFF5F /* ContentView.swift in Sources */,
+				212FAB74847CC399517DEA5B /* ProximityMusicApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9A2767072DC202425E6102 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44F72EE8B79EF18D9E88B85 /* AudioManager.swift in Sources */,
+				DBB63DEA4741905EBF887766 /* BluetoothManager.swift in Sources */,
+				A46016CBC437CDDC26322183 /* ContentView.swift in Sources */,
+				B8D520BB8B0D18CFA565FC48 /* ProximityMusicApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0C80C69F78E841B631115EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ProximityMusic.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 792LRD6NAX;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ProximityMusic-iOS";
+				PRODUCT_NAME = ProximityMusic;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1308DE2414FCFA9FB9953C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4C3B8C4D3DFBE5F6C4EA845E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ProximityMusic.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ProximityMusic-macOS";
+				PRODUCT_NAME = ProximityMusic;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8A39DC3A5FBBA0D79348A38A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ProximityMusic.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ProximityMusic-macOS";
+				PRODUCT_NAME = ProximityMusic;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AA86DD7EDBA1D58DED8C59A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ProximityMusic.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 792LRD6NAX;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ProximityMusic-iOS";
+				PRODUCT_NAME = ProximityMusic;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9E4374164B665DA7D973C79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		650BD34CC42A499EFCF9BDEA /* Build configuration list for PBXNativeTarget "ProximityMusic_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3B8C4D3DFBE5F6C4EA845E /* Debug */,
+				8A39DC3A5FBBA0D79348A38A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		72C729DBC75AC7DB8CA777FC /* Build configuration list for PBXProject "ProximityMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1308DE2414FCFA9FB9953C8C /* Debug */,
+				E9E4374164B665DA7D973C79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		927B93DE7AE27338246154EA /* Build configuration list for PBXNativeTarget "ProximityMusic_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA86DD7EDBA1D58DED8C59A5 /* Debug */,
+				0C80C69F78E841B631115EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A15BFF39C981589329A3EA47 /* Project object */;
+}
