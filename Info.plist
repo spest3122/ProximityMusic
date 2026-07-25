@@ -22,6 +22,15 @@
 	<string>This app needs Bluetooth to detect proximity between your devices.</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>This app needs Bluetooth to broadcast its presence to your other devices.</string>
+	<key>NSNearbyInteractionUsageDescription</key>
+	<string>This app uses Nearby Interaction to precisely determine the distance to other devices and seamlessly play music.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>This app uses the local network to discover nearby devices for precise distance measurement.</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_proxmusic._tcp</string>
+		<string>_proxmusic._udp</string>
+	</array>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>bluetooth-central</string>

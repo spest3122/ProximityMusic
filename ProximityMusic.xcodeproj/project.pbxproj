@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		212FAB74847CC399517DEA5B /* ProximityMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC345F7CBCC8A996CB27E01 /* ProximityMusicApp.swift */; };
+		266DD7342E802F3F61085386 /* UWBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F72AAA28CFF54B39F31442 /* UWBManager.swift */; };
 		3B5A7321459943D9D38F9604 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47E26B603EAC42F66EBDD6 /* AudioManager.swift */; };
 		44354CDB13F7C78056681119 /* funkbreakbeat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3C60220D8C5FCEAF45855EDC /* funkbreakbeat.mp3 */; };
 		52A9433789F3593BB58BFF5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D90A3EBE91A53DDA4BD5A6 /* ContentView.swift */; };
@@ -19,11 +20,13 @@
 		A6F2A7CDE39B5916F3153490 /* rhythmwalkfunk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4BDDFA2FD880DF77A6D753A /* rhythmwalkfunk.mp3 */; };
 		AE3FE63D18AAA84EBB059CDE /* funkbreakbeat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3C60220D8C5FCEAF45855EDC /* funkbreakbeat.mp3 */; };
 		B8D520BB8B0D18CFA565FC48 /* ProximityMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC345F7CBCC8A996CB27E01 /* ProximityMusicApp.swift */; };
+		C5F9031959EF0D6F91E44EB9 /* UWBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F72AAA28CFF54B39F31442 /* UWBManager.swift */; };
 		DBB63DEA4741905EBF887766 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1FD29C703692C99DD32F95 /* BluetoothManager.swift */; };
 		F44F72EE8B79EF18D9E88B85 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47E26B603EAC42F66EBDD6 /* AudioManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25F72AAA28CFF54B39F31442 /* UWBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWBManager.swift; sourceTree = "<group>"; };
 		3C60220D8C5FCEAF45855EDC /* funkbreakbeat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = funkbreakbeat.mp3; sourceTree = "<group>"; };
 		51D529106894C6823E307E39 /* ProximityMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProximityMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D90A3EBE91A53DDA4BD5A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +56,7 @@
 				8D1FD29C703692C99DD32F95 /* BluetoothManager.swift */,
 				64D90A3EBE91A53DDA4BD5A6 /* ContentView.swift */,
 				8AC345F7CBCC8A996CB27E01 /* ProximityMusicApp.swift */,
+				25F72AAA28CFF54B39F31442 /* UWBManager.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -175,6 +179,7 @@
 				5DB12FF73FF8B10627255C9F /* BluetoothManager.swift in Sources */,
 				52A9433789F3593BB58BFF5F /* ContentView.swift in Sources */,
 				212FAB74847CC399517DEA5B /* ProximityMusicApp.swift in Sources */,
+				266DD7342E802F3F61085386 /* UWBManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +191,7 @@
 				DBB63DEA4741905EBF887766 /* BluetoothManager.swift in Sources */,
 				A46016CBC437CDDC26322183 /* ContentView.swift in Sources */,
 				B8D520BB8B0D18CFA565FC48 /* ProximityMusicApp.swift in Sources */,
+				C5F9031959EF0D6F91E44EB9 /* UWBManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

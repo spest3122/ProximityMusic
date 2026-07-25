@@ -17,6 +17,11 @@ targets:
         UILaunchScreen: {}
         NSBluetoothAlwaysUsageDescription: "This app needs Bluetooth to detect proximity between your devices."
         NSBluetoothPeripheralUsageDescription: "This app needs Bluetooth to broadcast its presence to your other devices."
+        NSNearbyInteractionUsageDescription: "This app uses Nearby Interaction to precisely determine the distance to other devices and seamlessly play music."
+        NSLocalNetworkUsageDescription: "This app uses the local network to discover nearby devices for precise distance measurement."
+        NSBonjourServices:
+          - "_proxmusic._tcp"
+          - "_proxmusic._udp"
         UIBackgroundModes:
           - bluetooth-central
           - bluetooth-peripheral

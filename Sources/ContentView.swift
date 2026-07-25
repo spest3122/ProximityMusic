@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var bluetoothManager = BluetoothManager()
+    @StateObject private var uwbManager = UWBManager()
     @StateObject private var audioManager = AudioManager()
     @State private var selectedDeviceType: DeviceType = .iPad
     
@@ -24,17 +25,33 @@ struct ContentView: View {
                             } else {
                                 cartoonText("Playing Music")
                             }
-                            Text("Distance: \(bluetoothManager.proximityState)")
-                                .font(.custom("Marker Felt", size: 18))
-                                .foregroundColor(.black)
-                                .fontWeight(.bold)
+                            
+                            if let uwbDist = uwbManager.distance {
+                                Text(String(format: "Distance: %.1fm (UWB)", uwbDist))
+                                    .font(.custom("Marker Felt", size: 18))
+                                    .foregroundColor(.black)
+                                    .fontWeight(.bold)
+                            } else {
+                                Text("Distance: \(bluetoothManager.proximityState)")
+                                    .font(.custom("Marker Felt", size: 18))
+                                    .foregroundColor(.black)
+                                    .fontWeight(.bold)
+                            }
                         } else if bluetoothManager.isDetecting {
                             cartoonIcon(systemName: "antenna.radiowaves.left.and.right", color: .orange)
                             cartoonText("Searching...")
-                            Text("Proximity: \(bluetoothManager.proximityState)")
-                                .font(.custom("Marker Felt", size: 18))
-                                .foregroundColor(.black)
-                                .fontWeight(.bold)
+                            
+                            if let uwbDist = uwbManager.distance {
+                                Text(String(format: "Proximity: %.1fm (UWB)", uwbDist))
+                                    .font(.custom("Marker Felt", size: 18))
+                                    .foregroundColor(.black)
+                                    .fontWeight(.bold)
+                            } else {
+                                Text("Proximity: \(bluetoothManager.proximityState)")
+                                    .font(.custom("Marker Felt", size: 18))
+                                    .foregroundColor(.black)
+                                    .fontWeight(.bold)
+                            }
                         } else if bluetoothManager.isBroadcasting {
                             cartoonIcon(systemName: "dot.radiowaves.up.forward", color: .green)
                             cartoonText("Broadcasting as \(selectedDeviceType.rawValue)")
@@ -84,10 +101,13 @@ struct ContentView: View {
                             action: {
                                 if bluetoothManager.isBroadcasting {
                                     bluetoothManager.stopBroadcasting()
+                                    uwbManager.stop()
                                 } else {
                                     bluetoothManager.stopDetecting() // Stop other mode if active
+                                    uwbManager.stop()
                                     audioManager.pause()
                                     bluetoothManager.startBroadcasting(as: selectedDeviceType)
+                                    uwbManager.startBroadcasting(as: selectedDeviceType)
                                 }
                             }
                         )
@@ -98,10 +118,13 @@ struct ContentView: View {
                             action: {
                                 if bluetoothManager.isDetecting {
                                     bluetoothManager.stopDetecting()
+                                    uwbManager.stop()
                                     audioManager.pause()
                                 } else {
                                     bluetoothManager.stopBroadcasting() // Stop other mode if active
+                                    uwbManager.stop()
                                     bluetoothManager.startDetecting()
+                                    uwbManager.startDetecting()
                                 }
                             }
                         )
@@ -126,6 +149,9 @@ struct ContentView: View {
             }
             .onAppear {
                 bluetoothManager.onProximityChange = { isClose, detectedDeviceType in
+                    // Ignore BLE updates if UWB is active and providing distance
+                    if uwbManager.distance != nil { return }
+                    
                     if isClose, let type = detectedDeviceType {
                         if !audioManager.isPlaying {
                             audioManager.play(for: type)
@@ -134,6 +160,20 @@ struct ContentView: View {
                         if audioManager.isPlaying {
                             audioManager.pause()
                         }
+                    }
+                }
+            }
+            .onChange(of: uwbManager.distance) { newDistance in
+                guard let uwbDist = newDistance else { return }
+                guard let type = uwbManager.detectedDeviceType else { return }
+                
+                if uwbDist <= 2.0 {
+                    if !audioManager.isPlaying {
+                        audioManager.play(for: type)
+                    }
+                } else if uwbDist >= 2.5 {
+                    if audioManager.isPlaying {
+                        audioManager.pause()
                     }
                 }
             }
